@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script>
+    document.addEventListener('keydown', function(event){
+      //A has been pressed
+      if (event.keyCode == 65) {
+        var clap_audio = new Audio('sounds/clap.wav');
+        clap_audio.play();
+        //alert('A has been pressed');
+      }
+
+      //S has been pressed
+      if (event.keyCode == 83) {
+        var hihat_audio = new Audio('sounds/hihat.wav');
+        hihat_audio.play();
+        //alert('S has been pressed');
+      }
+
+      //D has been pressed
+      if (event.keyCode == 68) {
+        var kick_audio = new Audio('sounds/kick.wav');
+        kick_audio.play();
+        //alert('D has been pressed');
+      }
+
+      //F has been pressed
+      if (event.keyCode == 70) {
+        var openhat_audio = new Audio('sounds/openhat.wav');
+        openhat_audio.play();
+        //alert('F has been pressed');
+      }
+
+      //G has been pressed
+      if (event.keyCode == 71) {
+        var boom_audio = new Audio('sounds/boom.wav');
+        boom_audio.play();
+        //alert('G has been pressed');
+      }
+
+      //H has been pressed
+      if (event.keyCode == 72) {
+        //alert('H has been pressed');
+        var ride_audio = new Audio('sounds/ride.wav');
+        ride_audio.play();
+      }
+
+      //J has been pressed
+      if (event.keyCode == 74) {
+        //alert('J has been pressed');
+        var snare_audio = new Audio('sounds/snare.wav');
+        snare_audio.play();
+      }
+
+      //K has been pressed
+      if (event.keyCode == 75) {
+       // alert('K has been pressed');
+       var tom_audio = new Audio('sounds/tom.wav');
+       tom_audio.play();
+      }
+
+      //L has been pressed
+      if (event.keyCode == 76) {
+        //alert('L has been pressed');
+        var tink_audio = new Audio('sounds/tink.wav');
+        tink_audio.play();
+      }
+
+
+
+
+
+    });
+
+  </script>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
